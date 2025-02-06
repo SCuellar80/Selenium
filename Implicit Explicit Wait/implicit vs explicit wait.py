@@ -1,4 +1,6 @@
-#---------------------- Here an example when implicit wait fails and explicit wait is the solution
+#---------------------- Here an example where implicit wait fails and explicit wait is the solution
+
+
 #----------------------- 2 additional libraries should be imported : WebDriverWait and Expected Conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
