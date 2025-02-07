@@ -1,5 +1,5 @@
 from selenium import webdriver
-import pytest
+#import pytest
 #from Pages.login_page import LoginPage
 from page_login import LoginPage
 
