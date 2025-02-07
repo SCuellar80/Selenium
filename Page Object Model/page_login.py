@@ -12,6 +12,7 @@ class LoginPage():
         self.username_textbox = (By.ID,'username')
         self.password_textbox = (By.ID, 'password')
         self.login_button = (By.CSS_SELECTOR,'#login > button')
+        self.login_text = (By.ID,'flash') #this element's text will contain the status of the login
 
     def open_page(self):
         self.driver.get(self.url)
@@ -24,3 +25,6 @@ class LoginPage():
 
     def click_login(self):
         self.driver.find_element(*self.login_button).click()
+
+    def login_result(self):
+        return self.driver.find_element(*self.login_text).text
