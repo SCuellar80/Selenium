@@ -4,7 +4,7 @@ from page_excel import ExcelReader
 from selenium.webdriver.chrome.options import Options
 
 chrome_options = Options()
-#chrome_options.add_argument("--headless")  # enable headless, comment it to disable it
+chrome_options.add_argument("--headless")  # enable headless, comment it to disable it
 driver = webdriver.Chrome(chrome_options)
 driver.get("https://rpachallenge.com/")
 start = driver.find_element(By.CSS_SELECTOR, "button[class*='btn-large']")
