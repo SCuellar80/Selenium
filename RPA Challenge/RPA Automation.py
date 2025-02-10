@@ -13,7 +13,6 @@ start.click()
 
 excel_reader = ExcelReader()
 excel_data = excel_reader.read_excel_data()
-columnsText = excel_data.pop(0)
 
 button = driver.find_element(By.CSS_SELECTOR, "input[value*='Submit']")
 

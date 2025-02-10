@@ -15,7 +15,7 @@ class ExcelReader:
         data = []
 
         # Iterar sobre las filas del archivo de Excel
-        for row in sheet.iter_rows(min_row=1, values_only=True):  # Suponiendo que la primera fila es el encabezado
+        for row in sheet.iter_rows(min_row=2, values_only=True):  # if first line is headers, then start from 2
             First_Name = row[0]  # Primera columna
             Last_Name  = row[1]  # Segunda columna
             Company_Name = row[2]  # Tercera columna
